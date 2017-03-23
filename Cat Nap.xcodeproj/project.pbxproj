@@ -15,6 +15,9 @@
 		3DFB3B991E6F568F0006FEE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB3B971E6F568F0006FEE2 /* LaunchScreen.storyboard */; };
 		3DFB3BA41E6F568F0006FEE2 /* Cat_NapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3BA31E6F568F0006FEE2 /* Cat_NapTests.swift */; };
 		3DFB3BAF1E6F56900006FEE2 /* Cat_NapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3BAE1E6F56900006FEE2 /* Cat_NapUITests.swift */; };
+		AED5C69690A904C3123E886E /* Pods_Cat_NapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D015AE8DB4570283879EA3 /* Pods_Cat_NapTests.framework */; };
+		B279C219C77F867F392A5CE7 /* Pods_Cat_NapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744ED563F21A3CE26700E77D /* Pods_Cat_NapUITests.framework */; };
+		C036FF2BB1FE11EF6846A5B5 /* Pods_Cat_Nap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0B0D243CFC377E7672D46C /* Pods_Cat_Nap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EB4E7943794FED6C897003F /* Pods-Cat Nap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat Nap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cat Nap/Pods-Cat Nap.debug.xcconfig"; sourceTree = "<group>"; };
 		3DFB3B881E6F568F0006FEE2 /* Cat Nap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Nap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFB3B8B1E6F568F0006FEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DFB3B8D1E6F568F0006FEE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		3DFB3BAA1E6F568F0006FEE2 /* Cat NapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat NapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFB3BAE1E6F56900006FEE2 /* Cat_NapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_NapUITests.swift; sourceTree = "<group>"; };
 		3DFB3BB01E6F56900006FEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C336EEC016FCB78B71239CB /* Pods-Cat NapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat NapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cat NapTests/Pods-Cat NapTests.release.xcconfig"; sourceTree = "<group>"; };
+		744ED563F21A3CE26700E77D /* Pods_Cat_NapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cat_NapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0B0D243CFC377E7672D46C /* Pods_Cat_Nap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cat_Nap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1316BCC8AA33C4C31245E6F /* Pods-Cat NapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat NapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cat NapTests/Pods-Cat NapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9D015AE8DB4570283879EA3 /* Pods_Cat_NapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cat_NapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED8741E829D15721097F43B /* Pods-Cat NapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat NapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cat NapUITests/Pods-Cat NapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE3149A73D51BAA988CC172A /* Pods-Cat NapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat NapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cat NapUITests/Pods-Cat NapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFE0A2818F014CC8FB5CF9A2 /* Pods-Cat Nap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat Nap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cat Nap/Pods-Cat Nap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C036FF2BB1FE11EF6846A5B5 /* Pods_Cat_Nap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED5C69690A904C3123E886E /* Pods_Cat_NapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B279C219C77F867F392A5CE7 /* Pods_Cat_NapUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				3DFB3BA21E6F568F0006FEE2 /* Cat NapTests */,
 				3DFB3BAD1E6F568F0006FEE2 /* Cat NapUITests */,
 				3DFB3B891E6F568F0006FEE2 /* Products */,
+				A53CA2C6F6B3F3F8F28925B6 /* Pods */,
+				605E8598D6DD251FCF194AFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = "Cat NapUITests";
 			sourceTree = "<group>";
 		};
+		605E8598D6DD251FCF194AFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D0B0D243CFC377E7672D46C /* Pods_Cat_Nap.framework */,
+				A9D015AE8DB4570283879EA3 /* Pods_Cat_NapTests.framework */,
+				744ED563F21A3CE26700E77D /* Pods_Cat_NapUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A53CA2C6F6B3F3F8F28925B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EB4E7943794FED6C897003F /* Pods-Cat Nap.debug.xcconfig */,
+				EFE0A2818F014CC8FB5CF9A2 /* Pods-Cat Nap.release.xcconfig */,
+				A1316BCC8AA33C4C31245E6F /* Pods-Cat NapTests.debug.xcconfig */,
+				6C336EEC016FCB78B71239CB /* Pods-Cat NapTests.release.xcconfig */,
+				DE3149A73D51BAA988CC172A /* Pods-Cat NapUITests.debug.xcconfig */,
+				CED8741E829D15721097F43B /* Pods-Cat NapUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DFB3BB31E6F56900006FEE2 /* Build configuration list for PBXNativeTarget "Cat Nap" */;
 			buildPhases = (
+				31FC0FED2B0F9790FCE190DF /* [CP] Check Pods Manifest.lock */,
 				3DFB3B841E6F568F0006FEE2 /* Sources */,
 				3DFB3B851E6F568F0006FEE2 /* Frameworks */,
 				3DFB3B861E6F568F0006FEE2 /* Resources */,
+				276236BDCFF859F1C7C15FA3 /* [CP] Embed Pods Frameworks */,
+				0958AEC76B41F4F5BA85F591 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DFB3BB61E6F56900006FEE2 /* Build configuration list for PBXNativeTarget "Cat NapTests" */;
 			buildPhases = (
+				69403431729842758255EB21 /* [CP] Check Pods Manifest.lock */,
 				3DFB3B9B1E6F568F0006FEE2 /* Sources */,
 				3DFB3B9C1E6F568F0006FEE2 /* Frameworks */,
 				3DFB3B9D1E6F568F0006FEE2 /* Resources */,
+				A411D44A7A4040F95B3EF14F /* [CP] Embed Pods Frameworks */,
+				05EE618C44AC73855067BF3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DFB3BB91E6F56900006FEE2 /* Build configuration list for PBXNativeTarget "Cat NapUITests" */;
 			buildPhases = (
+				3C43644B44A2718A44306C7B /* [CP] Check Pods Manifest.lock */,
 				3DFB3BA61E6F568F0006FEE2 /* Sources */,
 				3DFB3BA71E6F568F0006FEE2 /* Frameworks */,
 				3DFB3BA81E6F568F0006FEE2 /* Resources */,
+				87B90AC7B9ADCBDF7C9B3CD0 /* [CP] Embed Pods Frameworks */,
+				D9C527F9B5EDAB1F52FFD049 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +308,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05EE618C44AC73855067BF3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat NapTests/Pods-Cat NapTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0958AEC76B41F4F5BA85F591 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat Nap/Pods-Cat Nap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		276236BDCFF859F1C7C15FA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat Nap/Pods-Cat Nap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31FC0FED2B0F9790FCE190DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C43644B44A2718A44306C7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69403431729842758255EB21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87B90AC7B9ADCBDF7C9B3CD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat NapUITests/Pods-Cat NapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A411D44A7A4040F95B3EF14F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat NapTests/Pods-Cat NapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C527F9B5EDAB1F52FFD049 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat NapUITests/Pods-Cat NapUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DFB3B841E6F568F0006FEE2 /* Sources */ = {
@@ -417,6 +604,7 @@
 		};
 		3DFB3BB41E6F56900006FEE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EB4E7943794FED6C897003F /* Pods-Cat Nap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CHJT78XY84;
@@ -430,6 +618,7 @@
 		};
 		3DFB3BB51E6F56900006FEE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE0A2818F014CC8FB5CF9A2 /* Pods-Cat Nap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CHJT78XY84;
@@ -443,6 +632,7 @@
 		};
 		3DFB3BB71E6F56900006FEE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1316BCC8AA33C4C31245E6F /* Pods-Cat NapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +648,7 @@
 		};
 		3DFB3BB81E6F56900006FEE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C336EEC016FCB78B71239CB /* Pods-Cat NapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +664,7 @@
 		};
 		3DFB3BBA1E6F56900006FEE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE3149A73D51BAA988CC172A /* Pods-Cat NapUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = CHJT78XY84;
@@ -487,6 +679,7 @@
 		};
 		3DFB3BBB1E6F56900006FEE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED8741E829D15721097F43B /* Pods-Cat NapUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = CHJT78XY84;

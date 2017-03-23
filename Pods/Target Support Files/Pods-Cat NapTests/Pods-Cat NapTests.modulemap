@@ -1,0 +1,6 @@
+framework module Pods_Cat_NapTests {
+  umbrella header "Pods-Cat NapTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

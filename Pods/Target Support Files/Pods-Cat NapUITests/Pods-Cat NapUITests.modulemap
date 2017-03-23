@@ -1,0 +1,6 @@
+framework module Pods_Cat_NapUITests {
+  umbrella header "Pods-Cat NapUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
