@@ -10,12 +10,25 @@ import UIKit
 
 class CatButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var viewModel: CatButtonViewModel
+    
+    init(with size: CatSize, action: String) {
+        self.viewModel = CatButtonViewModel(size: size)
+        super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        self.titleLabel?.text = action
+        configure(with: self.viewModel)
     }
-    */
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    fileprivate func configure(with viewModel: CatButtonViewModel) {
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalToConstant: viewModel.width).isActive = true
+        self.heightAnchor.constraint(equalToConstant: viewModel.height).isActive = true
+        self.layer.cornerRadius = viewModel.corners
+        self.addTarget(viewModel, action: #selector(viewModel.didTapButton(sender:)), for: UIControlEvents.touchUpInside)
+    }
 }
