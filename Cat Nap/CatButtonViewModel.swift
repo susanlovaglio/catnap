@@ -13,7 +13,6 @@ class CatButtonViewModel {
     
     var width: CGFloat
     var height: CGFloat
-    var buttonText: String?
     var corners: CGFloat
     
     let heightMultiplier: CGFloat = 0.095

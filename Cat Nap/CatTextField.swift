@@ -11,15 +11,19 @@ import UIKit
 class CatTextField: UITextField {
     
     var viewModel: CatTextFieldViewModel
+    var typeLabel: UILabel
     
-    init(with size: CatSize) {
+    init(with size: CatSize, title: String) {
         self.viewModel = CatTextFieldViewModel(size: size)
+        self.typeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        self.configure(with: viewModel)
+        self.configureTextField(with: viewModel)
+        self.configureLabel(with: title)
         self.delegate = viewModel
+        
     }
     
-    fileprivate func configure(with viewModel: CatTextFieldViewModel) {
+    fileprivate func configureTextField(with viewModel: CatTextFieldViewModel) {
         
         self.translatesAutoresizingMaskIntoConstraints = false
         self.layer.borderWidth = viewModel.border
@@ -27,11 +31,19 @@ class CatTextField: UITextField {
         self.widthAnchor.constraint(equalToConstant: viewModel.width).isActive = true
         self.heightAnchor.constraint(equalToConstant: viewModel.height).isActive = true
         self.layer.cornerRadius = viewModel.corners
-        self.layer.shadowColor = UIColor.lightGray.cgColor
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configureLabel(with title: String) {
+        self.addSubview(self.typeLabel)
+        self.typeLabel.text = title
+        self.typeLabel.textColor = UIColor.lightGray
+        self.typeLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.typeLabel.bottomAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        self.typeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8.0).isActive = true
     }
 }
 
