@@ -9,10 +9,14 @@
 import UIKit
 
 class CircleImageView: UIImageView {
+    
+    var viewModel: CircleImageViewViewModel
 
-    override init(image: UIImage?) {
+    init(size: CatSize, image: UIImage?) {
+        
+        self.viewModel = CircleImageViewViewModel(with: size)
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        self.layer.cornerRadius = 100.0
+        
         if image != nil {
             self.image = image
         } else {
@@ -20,9 +24,19 @@ class CircleImageView: UIImageView {
             self.image = UIImage(named: "CatProfilePic")
             self.tintColor = UIColor.white
         }
+        
+        self.configure(with: self.viewModel)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    fileprivate func configure(with viewModel: CircleImageViewViewModel) {
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalToConstant: viewModel.width).isActive = true
+        self.heightAnchor.constraint(equalToConstant: viewModel.height).isActive = true
+        self.layer.cornerRadius = viewModel.corners
     }
 }

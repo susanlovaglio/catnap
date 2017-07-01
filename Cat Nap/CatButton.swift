@@ -15,6 +15,7 @@ class CatButton: UIButton {
     init(with size: CatSize, action: String) {
         self.viewModel = CatButtonViewModel(size: size)
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        
         configure(with: self.viewModel)
         self.setTitle(action, for: UIControlState.normal)
         self.titleLabel?.textColor = UIColor.white

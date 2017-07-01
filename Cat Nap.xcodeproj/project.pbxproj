@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D53257E1F0868E200617129 /* ViewTester.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D53257D1F0868E200617129 /* ViewTester.storyboard */; };
+		3D5325801F08690300617129 /* ViewTesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53257F1F08690300617129 /* ViewTesterViewController.swift */; };
 		3D561BD51EEE42E7003086FD /* CatColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D561BD41EEE42E7003086FD /* CatColor.swift */; };
 		3D561BD71EEE492C003086FD /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D561BD61EEE492C003086FD /* CircleImageView.swift */; };
 		3D561BD91EEE4941003086FD /* CircleImageViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D561BD81EEE4941003086FD /* CircleImageViewViewModel.swift */; };
@@ -52,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		0EB4E7943794FED6C897003F /* Pods-Cat Nap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat Nap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cat Nap/Pods-Cat Nap.debug.xcconfig"; sourceTree = "<group>"; };
+		3D53257D1F0868E200617129 /* ViewTester.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewTester.storyboard; sourceTree = "<group>"; };
+		3D53257F1F08690300617129 /* ViewTesterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTesterViewController.swift; sourceTree = "<group>"; };
 		3D561BD41EEE42E7003086FD /* CatColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatColor.swift; sourceTree = "<group>"; };
 		3D561BD61EEE492C003086FD /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		3D561BD81EEE4941003086FD /* CircleImageViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageViewViewModel.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				3DFB3B971E6F568F0006FEE2 /* LaunchScreen.storyboard */,
+				3D53257D1F0868E200617129 /* ViewTester.storyboard */,
 				3DB48B221EEB7BC20057D96C /* UserLogIn.storyboard */,
 				3DB48B241EEB7BD30057D96C /* UserSignUp.storyboard */,
 				3DB48B261EEB7BF00057D96C /* TermsAndConditions.storyboard */,
@@ -147,6 +152,7 @@
 			children = (
 				3DB48B301EEB7DC10057D96C /* UserLogInViewController.swift */,
 				3D561BDA1EEE4A11003086FD /* UserSignUpViewController.swift */,
+				3D53257F1F08690300617129 /* ViewTesterViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 				3DB48B251EEB7BD30057D96C /* UserSignUp.storyboard in Resources */,
 				3DFB3B991E6F568F0006FEE2 /* LaunchScreen.storyboard in Resources */,
 				3DB48B291EEB7C140057D96C /* DashBoard.storyboard in Resources */,
+				3D53257E1F0868E200617129 /* ViewTester.storyboard in Resources */,
 				3DFB3B961E6F568F0006FEE2 /* Assets.xcassets in Resources */,
 				3DB48B231EEB7BC20057D96C /* UserLogIn.storyboard in Resources */,
 				3DB48B2D1EEB7C8E0057D96C /* History.storyboard in Resources */,
@@ -547,6 +554,7 @@
 				3DCA50821EECD48F00A4421C /* CatButton.swift in Sources */,
 				3D561BD91EEE4941003086FD /* CircleImageViewViewModel.swift in Sources */,
 				3DB48B311EEB7DC10057D96C /* UserLogInViewController.swift in Sources */,
+				3D5325801F08690300617129 /* ViewTesterViewController.swift in Sources */,
 				3DCA50841EECD4F600A4421C /* CatButtonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

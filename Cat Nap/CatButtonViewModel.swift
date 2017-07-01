@@ -11,18 +11,16 @@ import UIKit
 
 class CatButtonViewModel {
     
-    var width: CGFloat
-    var height: CGFloat
-    var corners: CGFloat
+    var width: CGFloat = 0
+    var height: CGFloat = 0
+    var corners: CGFloat = 0
     
     let heightMultiplier: CGFloat = 0.095
     let radius: CGFloat = 35.0
+    let screen = UIScreen.main.bounds
+
     
     init(size: CatSize) {
-        
-        self.width = 0.0
-        self.height = 0.0
-        self.corners = 0.0
         
         if size == .CatSmall {
             self.configureWithSmall()
@@ -31,12 +29,9 @@ class CatButtonViewModel {
         } else if size == .CatLarge {
             self.configureWithLarge()
         }
-        
     }
     
     fileprivate func configureWithSmall() {
-        
-        let screen = UIScreen.main.bounds
         
         self.width = screen.width * 0.25
         self.height = screen.height * heightMultiplier
@@ -45,17 +40,12 @@ class CatButtonViewModel {
     
     fileprivate func configureWithMedium() {
         
-        let screen = UIScreen.main.bounds
-        
         self.width = screen.width * 0.45
         self.height = screen.height * heightMultiplier
         self.corners = radius
-        
     }
     
     fileprivate func configureWithLarge() {
-        
-        let screen = UIScreen.main.bounds
         
         self.width = screen.width * 0.80
         self.height = screen.height * heightMultiplier
