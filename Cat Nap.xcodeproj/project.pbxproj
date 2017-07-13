@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3D53257E1F0868E200617129 /* ViewTester.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D53257D1F0868E200617129 /* ViewTester.storyboard */; };
 		3D5325801F08690300617129 /* ViewTesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53257F1F08690300617129 /* ViewTesterViewController.swift */; };
+		3D5325821F086D0E00617129 /* CatInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5325811F086D0E00617129 /* CatInfoView.swift */; };
+		3D5325841F08720000617129 /* CatInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5325831F08720000617129 /* CatInfoViewModel.swift */; };
 		3D561BD51EEE42E7003086FD /* CatColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D561BD41EEE42E7003086FD /* CatColor.swift */; };
 		3D561BD71EEE492C003086FD /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D561BD61EEE492C003086FD /* CircleImageView.swift */; };
 		3D561BD91EEE4941003086FD /* CircleImageViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D561BD81EEE4941003086FD /* CircleImageViewViewModel.swift */; };
@@ -56,6 +58,8 @@
 		0EB4E7943794FED6C897003F /* Pods-Cat Nap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat Nap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cat Nap/Pods-Cat Nap.debug.xcconfig"; sourceTree = "<group>"; };
 		3D53257D1F0868E200617129 /* ViewTester.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewTester.storyboard; sourceTree = "<group>"; };
 		3D53257F1F08690300617129 /* ViewTesterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTesterViewController.swift; sourceTree = "<group>"; };
+		3D5325811F086D0E00617129 /* CatInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatInfoView.swift; sourceTree = "<group>"; };
+		3D5325831F08720000617129 /* CatInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatInfoViewModel.swift; sourceTree = "<group>"; };
 		3D561BD41EEE42E7003086FD /* CatColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatColor.swift; sourceTree = "<group>"; };
 		3D561BD61EEE492C003086FD /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		3D561BD81EEE4941003086FD /* CircleImageViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageViewViewModel.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 				3DB48B321EEB7E1F0057D96C /* CatTextField.swift */,
 				3DCA50811EECD48F00A4421C /* CatButton.swift */,
 				3D561BD61EEE492C003086FD /* CircleImageView.swift */,
+				3D5325811F086D0E00617129 /* CatInfoView.swift */,
 				3DB48B201EEB7A920057D96C /* Storyboards */,
 			);
 			name = Views;
@@ -176,6 +181,7 @@
 				3DCA507F1EEB9A8300A4421C /* CatTextFieldViewModel.swift */,
 				3DCA50831EECD4F600A4421C /* CatButtonViewModel.swift */,
 				3D561BD81EEE4941003086FD /* CircleImageViewViewModel.swift */,
+				3D5325831F08720000617129 /* CatInfoViewModel.swift */,
 			);
 			name = "View Models";
 			sourceTree = "<group>";
@@ -549,7 +555,9 @@
 				3D561BDB1EEE4A11003086FD /* UserSignUpViewController.swift in Sources */,
 				3DFB3B8C1E6F568F0006FEE2 /* AppDelegate.swift in Sources */,
 				3DCA50801EEB9A8300A4421C /* CatTextFieldViewModel.swift in Sources */,
+				3D5325821F086D0E00617129 /* CatInfoView.swift in Sources */,
 				3DFB3B941E6F568F0006FEE2 /* Cat_Nap.xcdatamodeld in Sources */,
+				3D5325841F08720000617129 /* CatInfoViewModel.swift in Sources */,
 				3DB48B331EEB7E1F0057D96C /* CatTextField.swift in Sources */,
 				3DCA50821EECD48F00A4421C /* CatButton.swift in Sources */,
 				3D561BD91EEE4941003086FD /* CircleImageViewViewModel.swift in Sources */,
