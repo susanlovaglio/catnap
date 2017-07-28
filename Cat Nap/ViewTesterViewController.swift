@@ -13,8 +13,8 @@ class ViewtesterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let catview = CatInfoView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        let catinfoviewmodel = CatInfoViewModel()
+        let catview = CatInfoView(with: catinfoviewmodel)
         self.view.addSubview(catview)
         catview.translatesAutoresizingMaskIntoConstraints = false
         catview.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true

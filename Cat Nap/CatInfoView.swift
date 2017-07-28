@@ -16,15 +16,26 @@ class CatInfoView: UIView {
     let screen: CGRect = UIScreen.main.bounds
     let cardView: UIView
     let containerView: UIView
+    let photoView: CircleImageView
+    let titleLabel: UILabel
+    let subTitleLabel: UILabel
 
-    override init(frame: CGRect) {
+    init(with viewModel: CatInfoViewModel) {
+        
         self.containerView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         self.cardView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         self.topView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        super.init(frame: frame)
+        self.photoView = CircleImageView(size: .CatMedium, image: nil)
+        self.titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        self.subTitleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        
+        super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         self.configureContainerView()
         self.configureCardView()
         self.configureTopView()
+        self.configurePhotoView()
+        self.configureTitleLabel()
+        self.configureSubTitleLabel()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -62,4 +73,56 @@ class CatInfoView: UIView {
         self.containerView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         self.containerView.backgroundColor = UIColor.black.withAlphaComponent(0.80)
     }
+    
+    fileprivate func configurePhotoView() {
+        self.topView.addSubview(self.photoView)
+        self.photoView.topAnchor.constraint(equalTo: self.topView.topAnchor, constant: 10).isActive = true
+        self.photoView.centerXAnchor.constraint(equalTo: self.topView.centerXAnchor).isActive = true
+    }
+    
+    fileprivate func configureTitleLabel() {
+        self.topView.addSubview(self.titleLabel)
+        self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.titleLabel.topAnchor.constraint(equalTo: self.photoView.bottomAnchor, constant: 1).isActive = true
+        self.titleLabel.leftAnchor.constraint(equalTo: self.topView.leftAnchor, constant: 5).isActive = true
+        self.titleLabel.rightAnchor.constraint(equalTo: self.topView.rightAnchor, constant: -5).isActive = true
+        self.titleLabel.bottomAnchor.constraint(equalTo: self.topView.bottomAnchor, constant: -50).isActive = true
+        self.titleLabel.text = "TITLE LABEL"
+        self.titleLabel.textColor = UIColor.white
+        self.titleLabel.textAlignment = .center
+
+    }
+    
+    fileprivate func configureSubTitleLabel() {
+        self.topView.addSubview(self.subTitleLabel)
+        self.subTitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 1).isActive = true
+        self.subTitleLabel.bottomAnchor.constraint(equalTo: self.topView.bottomAnchor, constant: -5).isActive = true
+        self.subTitleLabel.leftAnchor.constraint(equalTo: self.topView.leftAnchor, constant: 5).isActive = true
+        self.subTitleLabel.rightAnchor.constraint(equalTo: self.topView.rightAnchor, constant: -5).isActive = true
+        self.subTitleLabel.text = "Subtitle Label"
+        self.subTitleLabel.textColor = UIColor.white
+        self.subTitleLabel.textAlignment = .center
+        self.subTitleLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        self.subTitleLabel.numberOfLines = 2
+        self.subTitleLabel.font = self.subTitleLabel.font.withSize(self.titleLabel.font.pointSize * 0.85)
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,6 +17,4 @@ class CatInfoViewModel {
     
     let radius: CGFloat = 100.0
     let screen: CGRect = UIScreen.main.bounds
-    
-    
 }
