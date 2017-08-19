@@ -37,7 +37,7 @@ class CatTextField: UITextField {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configureLabel(with title: String) {
+    fileprivate func configureLabel(with title: String) {
         self.addSubview(self.typeLabel)
         self.typeLabel.text = title
         self.typeLabel.textColor = UIColor.lightGray
@@ -50,20 +50,6 @@ class CatTextField: UITextField {
 enum CatSize {
     case CatSmall, CatMedium, CatLarge
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

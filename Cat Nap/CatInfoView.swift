@@ -36,6 +36,7 @@ class CatInfoView: UIView {
         self.configurePhotoView()
         self.configureTitleLabel()
         self.configureSubTitleLabel()
+        self.configureSquareEdge()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -90,7 +91,6 @@ class CatInfoView: UIView {
         self.titleLabel.text = "TITLE LABEL"
         self.titleLabel.textColor = UIColor.white
         self.titleLabel.textAlignment = .center
-
     }
     
     fileprivate func configureSubTitleLabel() {
@@ -107,7 +107,17 @@ class CatInfoView: UIView {
         self.subTitleLabel.numberOfLines = 2
         self.subTitleLabel.font = self.subTitleLabel.font.withSize(self.titleLabel.font.pointSize * 0.85)
     }
-
+    
+    fileprivate func configureSquareEdge() {
+        let squareView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        self.topView.addSubview(squareView)
+        squareView.translatesAutoresizingMaskIntoConstraints = false
+        squareView.backgroundColor = catColordimGray
+        squareView.topAnchor.constraint(equalTo: self.subTitleLabel.bottomAnchor, constant: 0.0).isActive = true
+        squareView.leftAnchor.constraint(equalTo: self.topView.leftAnchor, constant: 0.0).isActive = true
+        squareView.rightAnchor.constraint(equalTo: self.topView.rightAnchor, constant: 0.0).isActive = true
+        squareView.bottomAnchor.constraint(equalTo: self.topView.bottomAnchor, constant: 5.0).isActive = true
+    }
 }
 
 
