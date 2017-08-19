@@ -11,10 +11,5 @@ import UIKit
 
 class CatInfoViewModel {
     
-    var width: CGFloat = 320
-    var height: CGFloat = 550
-    var corners: CGFloat = 40
     
-    let radius: CGFloat = 100.0
-    let screen: CGRect = UIScreen.main.bounds
 }

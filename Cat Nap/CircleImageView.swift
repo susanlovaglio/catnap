@@ -24,7 +24,7 @@ class CircleImageView: UIImageView {
             self.image = UIImage(named: "CatProfilePic")
             self.tintColor = UIColor.white
         }
-        
+
         self.configure(with: self.viewModel)
     }
     
