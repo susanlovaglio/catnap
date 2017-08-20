@@ -14,6 +14,7 @@ class ViewtesterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTesterButtons()
+        addClearButton()
     }
     
     func addTesterButtons() {
@@ -43,15 +44,44 @@ class ViewtesterViewController: UIViewController {
     }
     
     @objc func configureTextfield() {
+        let emailTextfield = CatTextField(with: .CatLarge, title: "Email")
+        view.addSubview(emailTextfield)
+        emailTextfield.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        emailTextfield.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -175).isActive = true
         
+        let passwordTextfield = CatTextField(with: .CatLarge, title: "Password")
+        view.addSubview(passwordTextfield)
+        passwordTextfield.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        passwordTextfield.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -75).isActive = true
     }
     
     @objc func configureCatButton() {
         
+        let logInButton = CatButton(with: .CatLarge, action: "Log In")
+        view.addSubview(logInButton)
+        logInButton.backgroundColor = catColordimGray
+        logInButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        logInButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 40).isActive = true
+        
+        let createButton = CatButton(with: .CatLarge, action: "Create An Account")
+        view.addSubview(createButton)
+        createButton.backgroundColor = catColorDeepPurple
+        createButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        createButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 125).isActive = true
+        
+        let guestLogIn = CatButton(with: .CatLarge, action: "Continue as Guest")
+        view.addSubview(guestLogIn)
+        guestLogIn.backgroundColor = catColorGreen
+        guestLogIn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        guestLogIn.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 215).isActive = true
+
     }
     
     @objc func configureCirlceImage() {
-        
+        let imageView = CircleImageView(size: .CatSmall, image: nil)
+        view.addSubview(imageView)
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -210).isActive = true
     }
     
     @objc func configureInfoView() {
@@ -63,5 +93,21 @@ class ViewtesterViewController: UIViewController {
                 catview.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
                 catview.heightAnchor.constraint(equalTo: self.view.heightAnchor).isActive = true
                 catview.widthAnchor.constraint(equalTo:self.view.widthAnchor).isActive = true
+    }
+    
+    func clearAll() {
+        for view in self.view.subviews {
+            view.removeFromSuperview()
+        }
+        addTesterButtons()
+        addClearButton()
+    }
+    
+    func addClearButton() {
+        let button = UIButton(frame: CGRect(x: 355, y: 20, width: 50, height: 25))
+        button.backgroundColor = UIColor.red
+        button.setTitle("X", for: .normal)
+        self.view.addSubview(button)
+        button.addTarget(self, action: #selector(clearAll), for: .touchUpInside)
     }
 }

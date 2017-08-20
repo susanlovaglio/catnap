@@ -73,6 +73,8 @@ class CatInfoView: UIView {
         self.containerView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         self.containerView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         self.containerView.backgroundColor = UIColor.black.withAlphaComponent(0.80)
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(hideInfoView))
+        self.containerView.addGestureRecognizer(gesture)
     }
     
     fileprivate func configurePhotoView() {
@@ -117,6 +119,11 @@ class CatInfoView: UIView {
         squareView.leftAnchor.constraint(equalTo: self.topView.leftAnchor, constant: 0.0).isActive = true
         squareView.rightAnchor.constraint(equalTo: self.topView.rightAnchor, constant: 0.0).isActive = true
         squareView.bottomAnchor.constraint(equalTo: self.topView.bottomAnchor, constant: 5.0).isActive = true
+    }
+    
+    @objc fileprivate func hideInfoView() {
+        //TODO: move this to the user of the view
+        self.isHidden = true
     }
 }
 
