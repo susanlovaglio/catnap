@@ -25,7 +25,7 @@ class CatInfoView: UIView {
         self.containerView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         self.cardView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         self.topView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        self.photoView = CircleImageView(size: .CatMedium, image: nil)
+        self.photoView = CircleImageView(size: .CatMedium, type:.Cat, image: nil)
         self.titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         self.subTitleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         

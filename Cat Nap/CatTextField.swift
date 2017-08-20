@@ -51,5 +51,7 @@ enum CatSize {
     case CatSmall, CatMedium, CatLarge
 }
 
-
+enum BeingType {
+    case Human, Cat
+}
 

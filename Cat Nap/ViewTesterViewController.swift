@@ -41,6 +41,12 @@ class ViewtesterViewController: UIViewController {
         catinfoview.backgroundColor = UIColor.black
         catinfoview.addTarget(self, action: #selector(configureInfoView), for: .touchUpInside)
         self.view.addSubview(catinfoview)
+        
+        let profiletable = UIButton(frame: CGRect(x: 10, y: 140, width: 100, height: 25))
+        profiletable.setTitle("table info", for: .normal)
+        profiletable.backgroundColor = UIColor.black
+        profiletable.addTarget(self, action: #selector(configureprofiletable), for: .touchUpInside)
+        self.view.addSubview(profiletable)
     }
     
     @objc func configureTextfield() {
@@ -74,25 +80,34 @@ class ViewtesterViewController: UIViewController {
         guestLogIn.backgroundColor = catColorGreen
         guestLogIn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         guestLogIn.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 215).isActive = true
-
     }
     
     @objc func configureCirlceImage() {
-        let imageView = CircleImageView(size: .CatSmall, image: nil)
+        let imageView = CircleImageView(size: .CatLarge, type: .Cat, image: nil)
         view.addSubview(imageView)
         imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -210).isActive = true
     }
     
     @objc func configureInfoView() {
-                let catinfoviewmodel = CatInfoViewModel()
-                let catview = CatInfoView(with: catinfoviewmodel)
-                self.view.addSubview(catview)
-                catview.translatesAutoresizingMaskIntoConstraints = false
-                catview.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-                catview.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-                catview.heightAnchor.constraint(equalTo: self.view.heightAnchor).isActive = true
-                catview.widthAnchor.constraint(equalTo:self.view.widthAnchor).isActive = true
+        let catinfoviewmodel = CatInfoViewModel(type: .Cat)
+        let catview = CatInfoView(with: catinfoviewmodel)
+        self.view.addSubview(catview)
+        catview.translatesAutoresizingMaskIntoConstraints = false
+        catview.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        catview.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        catview.heightAnchor.constraint(equalTo: self.view.heightAnchor).isActive = true
+        catview.widthAnchor.constraint(equalTo:self.view.widthAnchor).isActive = true
+    }
+    
+    @objc func configureprofiletable() {
+        let table = CatProfileTable(with: .Cat)
+        self.view.addSubview(table)
+        table.translatesAutoresizingMaskIntoConstraints = false
+        table.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        table.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        table.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        table.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 400).isActive = true
     }
     
     func clearAll() {

@@ -11,5 +11,9 @@ import UIKit
 
 class CatInfoViewModel {
     
+    var type: BeingType
     
+    init(type: BeingType) {
+        self.type = type
+    }
 }

@@ -13,7 +13,7 @@ class UserSignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let imageView = CircleImageView(size: .CatSmall, image: nil)
+        let imageView = CircleImageView(size: .CatSmall, type: .Cat, image: nil)
         view.addSubview(imageView)
         imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -210).isActive = true

@@ -12,7 +12,7 @@ class CircleImageView: UIImageView {
     
     var viewModel: CircleImageViewViewModel
 
-    init(size: CatSize, image: UIImage?) {
+    init(size: CatSize, type:BeingType, image: UIImage?) {
         
         self.viewModel = CircleImageViewViewModel(with: size)
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -21,10 +21,14 @@ class CircleImageView: UIImageView {
             self.image = image
         } else {
             self.backgroundColor = catColordimGray
-            self.image = UIImage(named: "CatProfilePic")
+            
+            switch type {
+            case .Human: self.image = UIImage(named: "humanprofilepic")
+            case .Cat : self.image = UIImage(named: "CatProfilePic")
+            }
             self.tintColor = UIColor.white
         }
-
+        
         self.configure(with: self.viewModel)
     }
     
